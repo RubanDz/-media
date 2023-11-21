@@ -1,9 +1,13 @@
+* {
+   box-sizing: border-box;
+}
+/*Навигация*/
 .navigate {
    width: 100%;
    background-color: green;
 }
 @media screen and (max-width: 680px) {
-   .navigate {background-color: black;}
+   .navigate {background-color: rgba(0, 0, 0, .8)}
 }
 .navigate__link {
   display: inline-block;
@@ -27,6 +31,45 @@
 .navigate__link_decor:active {
    color: lightcoral;
 }
+/*Контент Column*/
+.content::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+.content__column {
+   float: left;
+   width: 25%;
+   padding: 20px;
+}
+@media screen and (max-width: 992px) {
+   .content__column {
+      width: 50%;
+   }
+}
+@media screen and (max-width: 600px) {
+   .content__column {
+      width: 100%;
+   }
+}
+   .content__column_background {
+      background-color: gray;
+      color: white;
+      font-size: 1.3rem;
+   }
+   .content__column_background:nth-child(1)  {
+      background-color: #aaa;
+   }
+   .content__column_background:nth-child(2)  {
+      background-color: #ccc;
+   }
+   .content__column_background:nth-child(3)  {
+      background-color: #ddd;
+   }
+   .content__column_background:last-of-type {
+      background-color: #bbb;
+   }
+
 
 
 
