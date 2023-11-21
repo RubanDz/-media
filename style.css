@@ -2,6 +2,9 @@
    width: 100%;
    background-color: green;
 }
+@media screen and (max-width: 680px) {
+   .navigate {background-color: black;}
+}
 .navigate__link {
   display: inline-block;
   padding: 20px;
@@ -24,6 +27,7 @@
 .navigate__link_decor:active {
    color: lightcoral;
 }
+
 
 
 
