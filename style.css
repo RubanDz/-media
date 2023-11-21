@@ -1,0 +1,35 @@
+.navigate {
+   width: 100%;
+   background-color: green;
+}
+.navigate__link {
+  display: inline-block;
+  padding: 20px;
+  border-right: 1px dashed white ;
+}
+@media screen and (max-width: 680px){
+   .navigate__link {
+      display: block;
+      border-bottom: 1px dashed white;
+   }
+}
+.navigate__link_decor {
+   text-decoration: none;
+   color: white;
+   font-weight: 900;
+}
+.navigate__link_decor:hover {
+   color: red;
+}
+.navigate__link_decor:active {
+   color: lightcoral;
+}
+
+
+
+   
+
+  
+   
+  
+  
